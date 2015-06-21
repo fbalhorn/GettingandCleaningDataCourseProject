@@ -1,0 +1,31 @@
+The result file tidy_data.txt contains the following variables:
+
+"activity_code": describing the activity to which the data is related out of (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING)
+"subject_id": ranging from 1..30 uniquely coding the subject_id
+
+The remaining variables were extended by the string "_mean" to reflect the fact, that they have been averaged ofer all matching observations for the respective subject_id and activity_code):
+Each of the following variables appears:
+
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+... with the following 2 possible extensions:
+
+mean()_mean: Mean value of the mean values
+std()_mean: Mean value of the standard deviations
