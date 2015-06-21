@@ -7,4 +7,8 @@ First the data is loaded into appropriate variables. As a second step the test a
 
 For the Y prefix, the indices, i.e. the activity codes, are exchanged with the respective activity labels.
 
-The subject id is included in the column subject_id
+The subject id is included in the column subject_id and the activity is coded in activity_code.
+
+Using the package reshape2 and the melt function, both the fields activity_code and subject_id are declared as ids and the mean is calculated for the respective remaining variables.
+
+Finaly, the output file is written using write.table()
