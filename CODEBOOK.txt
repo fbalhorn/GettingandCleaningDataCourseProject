@@ -1,7 +1,7 @@
 The result file tidy_data.txt contains the following variables:
 
-"activity_code": describing the activity to which the data is related out of (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING)
 "subject_id": ranging from 1..30 uniquely coding the subject_id
+"activity_code": describing the activity to which the data is related out of (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING)
 
 The remaining variables were extended by the string "_mean" to reflect the fact, that they have been averaged ofer all matching observations for the respective subject_id and activity_code):
 Each of the following variables appears:
