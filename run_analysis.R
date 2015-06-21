@@ -50,6 +50,6 @@ character_vector = as.character(names(XY_all[, 1:66])) # specify a vector contai
 melt_frame = melt(XY_all, id=c("activity_code","subject_id"), measure.vars=character_vector) # use melt to declare the activity_code and subject_id as id-type fields
 tidy_data = dcast(melt_frame, subject_id + activity_code ~ variable, mean)  # tidy_data contains the desired result
 
-names(tidy_data)<-paste(names(tidy_data),"_mean",sep='') # rename column headers to encorporate the mean
+names(tidy_data)<-c("activity_code","subject_id",paste(names(tidy_data[3:68]),"_mean",sep='')) # rename column headers to encorporate the mean
 
 write.table(tidy_data,file="tidy_data.txt",row.names=FALSE) # create output file
